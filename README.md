@@ -2,6 +2,11 @@
 
 A NextJS serverless API to get a user's Github, Hackerrank, and Leetcode contributions. Hosted on vercel.com. Faster than Heroku.
 
+<img width="1136" alt="Screen Shot 2022-04-19 at 9 09 56 AM" src="https://user-images.githubusercontent.com/2933593/164051651-8bd63e33-b74f-448c-85aa-f29af47ed6fa.png">
+
+<img width="1136" alt="Screen Shot 2022-04-19 at 9 09 53 AM" src="https://user-images.githubusercontent.com/2933593/164051646-83b038ee-c958-4df4-b392-5d3399c07244.png">
+
+
 ### Endpoint
 
 https://coding-contributions-api.vercel.app/api
