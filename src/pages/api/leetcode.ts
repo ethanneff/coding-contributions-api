@@ -1,6 +1,7 @@
 import axios, { AxiosRequestConfig } from 'axios';
 import { NextApiRequest, NextApiResponse } from 'next';
 import { ApiResponse } from '../../types';
+import { getLeetCodeTransformation } from '../../utils';
 
 export default async function handler(
   request: NextApiRequest,
@@ -60,7 +61,8 @@ export default async function handler(
     const {
       data: { data },
     } = await axios(config);
-    response.status(200).json(data);
+    const json = getLeetCodeTransformation(data);
+    response.status(200).json(json);
   } catch (e) {
     const error = e instanceof Error ? e.message : 'unknown error';
     response.status(500).json({ error });
