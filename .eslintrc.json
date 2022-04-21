@@ -11,18 +11,12 @@
     "plugin:jsx-a11y/recommended",
     "plugin:sonarjs/recommended",
     "plugin:github/recommended",
-
     // style
     "plugin:prettier/recommended"
   ],
+  "ignorePatterns": ["next.config.js", "prettier.config.js", "next-env.d.ts"],
   "parser": "@typescript-eslint/parser",
-  "rules": {},
-  "overrides": [
-    {
-      "files": ["src/pages/_app.tsx", "src/pages/_document.tsx"],
-      "rules": {
-        "filenames/match-regex": "off"
-      }
-    }
-  ]
+  "rules": {
+    "filenames/match-regex": [2, "^[a-zA-Z]+$", true] // prevents hyphens and underscores in file names
+  }
 }
