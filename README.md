@@ -9,7 +9,7 @@ A NextJS serverless API to get a user's Github, Hackerrank, and Leetcode contrib
 
 ### Endpoint
 
-https://coding-contributions-api.vercel.app/api
+[https://coding-contributions-api.vercel.app/api](https://coding-contributions-api.vercel.app/)
 
 ### Example Request
 
